@@ -1,5 +1,5 @@
 import React from "react";
-import "./SearchResult.css";
+import "../styles/SearchResult.css";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import StarIcon from "@mui/icons-material/Star";
 
@@ -10,7 +10,7 @@ function SearchResult({
   description,
   star,
   price,
-  total,
+  total
 }) {
   return (
     <div className="searchResult">
@@ -32,6 +32,7 @@ function SearchResult({
               <strong>{star}</strong>
             </p>
           </div>
+
           <div className="searchResults__price">
             <h2>{price}</h2>
             <p>{total}</p>

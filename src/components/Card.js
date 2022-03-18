@@ -1,9 +1,9 @@
 import React from "react";
-import "./Card.css";
+import "../styles/Card.css";
 
-function Card({ src, title, description, price }) {
+function Card({ src, title, description, price, className }) {
   return (
-    <div className="card">
+    <div className={`card ${className}`}>
       <img src={src} alt="" />
       <div className="card__info">
         <h2>{title}</h2>

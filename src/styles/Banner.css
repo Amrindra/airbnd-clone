@@ -1,7 +1,37 @@
 .banner {
+  /* height: 70vh;
+  background-color: black; */
+  position: relative;
+  width: 90%;
+  height: 90vh;
+}
+
+.banner h3 {
+  margin-left: 12px;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.card-section {
+  display: flex;
+}
+
+/* .banner-homepage-background {
+  position: absolute;
+
+  bottom: 0;
+  z-index: 999;
+}
+
+.banner-homepage-background img {
+  border-radius: 10px;
+} */
+
+/* .banner {
   background: url("https://media.cntraveler.com/photos/5db1d0dd11c1e500092e7133/master/pass/airbnb-ski-aspen-28328347.jpg")
     center center;
   height: 50vh;
+  background-color: black;
   position: relative;
 }
 
@@ -42,4 +72,4 @@
 
 .banner__info > h5 {
   margin-top: 10px;
-}
+} */

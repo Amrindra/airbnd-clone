@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Search.css";
+import "../styles/Search.css";
 import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRangePicker } from "react-date-range";
@@ -18,7 +18,7 @@ function Search() {
   const selectionRange = {
     startDate: startDate,
     endDate: endDate,
-    key: "selection",
+    key: "selection"
   };
   //   this is from the DATE PICKER package
   function handleSelect(ranges) {
