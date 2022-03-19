@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Header.css";
 import SearchIcon from "@mui/icons-material/Search";
-// import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import LanguageIcon from "@mui/icons-material/Language";
 import Avatar from "@mui/material/Avatar";
 import { Link } from "react-router-dom";
@@ -32,7 +31,7 @@ function Header() {
           <LanguageIcon />
           <div className="avatar-menu-icon">
             <MenuIcon className="menu-icon" />
-            <Avatar />
+            <Avatar className="avatar-icon" />
           </div>
         </div>
       </div>

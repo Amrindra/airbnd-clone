@@ -11,6 +11,13 @@ function Banner() {
 
   return (
     <div className="banner">
+      {/* <div className="banner-homepage-image">
+        <div className="banner-homepage-image-desc">
+          <h1>Let your curiosity do the booking</h1>
+          <button>I'm flexible</button>
+        </div>
+      </div> */}
+
       <h3> Inspiration for your next trip</h3>
       <div className="card-section">
         <Card
@@ -38,6 +45,48 @@ function Banner() {
           description="61 miles away"
           className="forth-card"
         />
+      </div>
+
+      <h3 className="title">Discover Airbnb Experiences</h3>
+
+      {/* FEATURE SECTION */}
+      <div className="feature-wrapper">
+        <div className="feature-left">
+          <div className="feature-desc">
+            <h3>Things to do on your trip</h3>
+            <button>Experiences</button>
+          </div>
+        </div>
+
+        <div className="feature-right">
+          <div className="feature-desc">
+            <h3>Things to do from home</h3>
+            <button>Online Experiences</button>
+          </div>
+        </div>
+      </div>
+
+      {/* GIFT CARDS SECTION */}
+      <div className="banner-gift-card-wrapper">
+        <div className="banner-gift-card-left">
+          <h3>Shop Airbnb gift cards</h3>
+          <button>Learn more</button>
+        </div>
+
+        <div className="banner-gift-card-right">
+          <img
+            src="https://a0.muscache.com/im/pictures/1ca4a497-ba40-4429-be1c-ac6abe4209c6.jpg?im_w=2560"
+            alt=""
+          />
+        </div>
+      </div>
+
+      {/* QUESTION SECTION  */}
+      <div className="question-container">
+        <div className="question-wrapper">
+          <h1>Questions about hosting?</h1>
+          <button>Ask a Superhost</button>
+        </div>
       </div>
 
       {/* <div className="banner-homepage-background">

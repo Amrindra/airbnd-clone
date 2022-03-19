@@ -1,19 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&family=Kaushan+Script&family=Nanum+Gothic:wght@400;700&display=swap");
+
 .banner {
-  /* height: 70vh;
-  background-color: black; */
   position: relative;
   width: 90%;
+}
+
+.title {
+  /* margin-bottom: 10rem; */
+}
+
+/* .banner-homepage-image {
+  background: url("https://a0.muscache.com/im/pictures/23b047cd-19c9-42c0-a83b-2f4f6f25717b.jpg?im_w=2560");
+  background-size: cover;
+  position: relative;
   height: 90vh;
+  width: 100%;
+  border-radius: 10px;
+  z-index: 999;
+  bottom: 20rem;
+} */
+
+/* .banner-homepage-image-desc {
+  text-align: center;
+  color: white;
+  padding-top: 420px;
+  font-size: 1.4rem;
+} */
+
+.banner-homepage-image-desc button {
+  height: 50px;
+  width: 150px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  color: linear-gradient(90deg, #6f019c 0%, #c6017e 135.12%);
+  margin-top: 30px;
 }
 
 .banner h3 {
   margin-left: 12px;
   margin-bottom: 20px;
   font-size: 2.5rem;
+  position: relative;
+  /* bottom: 15rem; */
+  margin-top: 4rem;
 }
 
 .card-section {
+  /* position: relative; */
+  position: relative;
+  /* bottom: 14rem; */
   display: flex;
+}
+
+/* ************ BANNER FEATURE SECTION **********  */
+
+.feature-wrapper {
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 50px;
+  height: 85vh;
+  width: 100%;
+}
+
+.feature-left {
+  background: url("https://a0.muscache.com/im/pictures/b2f98185-f3bf-40db-ba8d-da0bceeccc65.jpg?im_w=720");
+  flex: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.feature-right {
+  background: url("https://a0.muscache.com/im/pictures/cae7ae9a-d069-4c6a-9267-795643472df1.jpg?im_w=1200");
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex: 1;
+}
+
+.feature-left,
+.feature-right {
+  border-radius: 15px;
+}
+
+.feature-desc {
+  color: white;
+  padding: 30px 50px;
+  font-size: 1.3vw;
+  max-width: 290px;
+}
+
+.feature-desc button {
+  background-color: #fff;
+  border: none;
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.feature-desc button:hover {
+  background-color: rgb(223, 223, 223);
+}
+
+@media (max-width: 1600px) {
+  .feature-wrapper {
+    /* height: 60vh; */
+  }
+}
+
+@media (max-width: 975px) {
+  .feature-wrapper {
+    height: 60vh;
+  }
+}
+
+/* *********GIFT CARD SECTION********** */
+.banner-gift-card-wrapper {
+  padding-bottom: 5rem;
+  display: flex;
+}
+
+.banner-gift-card-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-gift-card-left h3 {
+  font-size: 3rem;
+  margin-left: 0;
+}
+
+.banner-gift-card-left button {
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 120px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.banner-gift-card-right {
+  flex: 2;
+  margin-top: 3rem;
+}
+
+.banner-gift-card-right img {
+  width: 800px;
+  height: 320px;
+  padding-left: 6rem;
+}
+
+/* ********QUESTION SECTION******* */
+.question-container {
+  /* padding-bottom: 100rem; */
+  height: 90vh;
+  width: 100%;
+  background: url("https://a0.muscache.com/im/pictures/cca24f3f-8f66-4e9d-98d8-dd5cda8911eb.jpg?im_w=1920");
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.question-wrapper {
+  padding: 40px 50px;
+  max-width: 50px;
+  color: white;
+}
+
+.question-wrapper h1 {
+  font-size: 6vw;
+  font-family: "Cabin", sans-serif;
+}
+
+.question-wrapper button {
+  height: 50px;
+  width: 170px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 80px;
+  border: none;
+  cursor: pointer;
+}
+
+.question-wrapper button:hover {
+  background-color: rgb(223, 223, 223);
 }
 
 /* .banner-homepage-background {
