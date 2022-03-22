@@ -1,0 +1,31 @@
+.login-wrapper {
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  background-color: #fff;
+  z-index: 999;
+  border-radius: 10px;
+  width: 250px;
+  height: 250px;
+}
+
+.login-wrapper .login-ul {
+  /* margin-bottom: 1rem; */
+  color: black;
+  padding: 15px;
+  list-style: none;
+}
+
+.login-ul li {
+  /* padding: 10px 20px 10px 0; */
+  line-height: 2.5rem;
+  cursor: pointer;
+}
+
+.login-ul li:hover {
+  background-color: rgba(223, 223, 223, 30%);
+}
+
+.login-ul .signup {
+  font-weight: bold;
+}

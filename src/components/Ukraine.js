@@ -4,7 +4,7 @@ import "../styles/Ukraine.css";
 function Ukraine() {
   return (
     <div className="Ukraine">
-      <div className="war-advertisement">
+      <div className="ukraine-wrapper">
         <h3>Help house 100,000 refugees fleeing Ukraine</h3>
         <button className="learn-more-btn">Learn more</button>
       </div>

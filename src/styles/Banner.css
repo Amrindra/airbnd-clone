@@ -1,41 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&family=Kaushan+Script&family=Nanum+Gothic:wght@400;700&display=swap");
 
 .banner {
-  position: relative;
   width: 90%;
+  max-width: 1700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.title {
-  /* margin-bottom: 10rem; */
-}
-
-/* .banner-homepage-image {
+.banner-homepage-image {
   background: url("https://a0.muscache.com/im/pictures/23b047cd-19c9-42c0-a83b-2f4f6f25717b.jpg?im_w=2560");
   background-size: cover;
-  position: relative;
-  height: 90vh;
+  position: absolute;
+  height: 30%;
   width: 100%;
   border-radius: 10px;
-  z-index: 999;
-  bottom: 20rem;
-} */
+  z-index: 1;
+  /* margin-left: 2rem; */
+  top: -33%;
+}
 
-/* .banner-homepage-image-desc {
+.banner-homepage-image-desc {
+  position: relative;
   text-align: center;
   color: white;
   padding-top: 420px;
   font-size: 1.4rem;
-} */
+}
 
 .banner-homepage-image-desc button {
+  position: relative;
   height: 50px;
   width: 150px;
   border-radius: 50px;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: bold;
   border: none;
-  color: linear-gradient(90deg, #6f019c 0%, #c6017e 135.12%);
   margin-top: 30px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #6f019c 0%, #c6017e 135.12%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner-homepage-image-desc button:after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 150px;
+  height: 50px;
+  background: rgb(255, 255, 255);
+  z-index: -1;
+  border-radius: 50px;
+}
+
+.banner-wrapper {
+  position: relative;
+  margin-top: 450px;
+  margin-bottom: 5rem;
 }
 
 .banner h3 {
@@ -105,12 +127,6 @@
 
 .feature-desc button:hover {
   background-color: rgb(223, 223, 223);
-}
-
-@media (max-width: 1600px) {
-  .feature-wrapper {
-    /* height: 60vh; */
-  }
 }
 
 @media (max-width: 975px) {
@@ -194,60 +210,55 @@
   background-color: rgb(223, 223, 223);
 }
 
-/* .banner-homepage-background {
-  position: absolute;
-
-  bottom: 0;
-  z-index: 999;
+@media (max-width: 1400px) {
+  .banner-wrapper {
+    /* margin-top: 350px; */
+  }
 }
 
-.banner-homepage-background img {
-  border-radius: 10px;
-} */
-
-/* .banner {
-  background: url("https://media.cntraveler.com/photos/5db1d0dd11c1e500092e7133/master/pass/airbnb-ski-aspen-28328347.jpg")
-    center center;
-  height: 50vh;
-  background-color: black;
-  position: relative;
+@media (max-width: 1024px) {
+  .banner-wrapper {
+    /* margin-bottom: 250px; */
+  }
 }
 
-.banner__info {
-  background-color: black;
-  color: white;
-  padding-top: 20vh;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 40px;
-  width: 300px;
-}
+@media (max-width: 680px) {
+  .banner-homepage-image {
+    background: url("https://a0.muscache.com/im/pictures/ac6ab9ee-7b70-42e9-a57d-a967ab6e2ef1.jpg?im_w=720");
+    background-size: cover;
+    height: 15%;
+    top: -16.5%;
+    /* right: 1.8rem; */
+  }
 
-.banner__search {
-  display: flex;
-  flex-direction: column;
-}
+  .banner-homepage-image-desc {
+    /* padding-top: 350px; */
+    font-size: 1rem;
+    bottom: 4rem;
+  }
 
-.banner__searchButton {
-  background-color: white !important;
-  font-weight: 900 !important;
-  text-transform: inherit !important;
-  color: #ff7779 !important;
-}
+  .card-section {
+    display: block;
+  }
 
-.banner__info > button {
-  background-color: #ff7779;
-  color: white;
-  text-transform: inherit;
-  margin-top: 20px;
-  font-weight: 600;
-}
+  .feature-wrapper {
+    display: block;
+    height: 90vh;
+  }
 
-.banner__info > button:hover {
-  background-color: white;
-  color: #ff7779;
-}
+  .feature-left,
+  .feature-right {
+    height: 70vh;
+    margin-bottom: 3rem;
+  }
+  .banner-gift-card-wrapper {
+    display: block;
+    margin-top: 20rem;
+  }
 
-.banner__info > h5 {
-  margin-top: 10px;
-} */
+  .banner-gift-card-right img {
+    width: 400px;
+    height: 200px;
+    padding-left: 0;
+  }
+}

@@ -1,4 +1,4 @@
-.header-container {
+.header-body-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,16 +6,17 @@
   font-family: "Nanum Gothic", sans-serif;
   font-size: 0.9rem;
   background-color: black;
-  z-index: 1;
 }
 
 .header {
+  /* position: fixed; */
+  z-index: 999;
   display: flex;
+  max-width: 1700px;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
   top: 0;
-  width: 100%;
+  width: 90%;
 }
 
 .header-center-ul {
@@ -31,17 +32,17 @@
   padding: 0 20px;
 }
 
-.header__icon {
+.header-icon {
   object-fit: contain;
   height: 80px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 
-.header__search {
+.header-search {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  width: 70%;
   border: 1px solid lightgray;
   border-radius: 99px;
   background-color: white;
@@ -79,31 +80,32 @@
   height: 35px;
 }
 
-.header__right {
+.header-right {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: 50px;
+  /* margin-right: 0px; */
   color: white;
 }
 
-.header__right p {
+.header-right p {
   margin-right: 1rem;
 }
 
-.avatar-menu-icon {
+.avatar-menu-icons {
+  position: relative;
   display: flex;
   align-items: center;
   background-color: white;
-  padding: 8px 5px 8px 10px;
+  padding: 5px 5px 5px 10px;
   border-radius: 50px;
   margin-left: 1rem;
   cursor: pointer;
 }
 
 .avatar-icon {
-  height: 27px;
-  width: 27px;
+  height: 25px;
+  width: 25px;
 }
 
 .menu-icon {
@@ -152,4 +154,43 @@
 
 .search-items-h-p {
   width: 100%;
+}
+
+.header-on-mobile {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .header-search {
+    width: 85vw;
+  }
+}
+
+@media (max-width: 680px) {
+  .header,
+  .header-search {
+    display: none;
+  }
+
+  .header-on-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(233, 231, 231);
+    width: 90%;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: -3rem;
+  }
+
+  .header-on-mobile-icon {
+    color: red;
+    font-size: 2rem;
+  }
+
+  .header-on-mobile p {
+    font-weight: bold;
+  }
 }
