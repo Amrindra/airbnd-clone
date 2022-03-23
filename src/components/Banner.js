@@ -25,26 +25,26 @@ function Banner() {
         <h3> Inspiration for your next trip</h3>
         <div className="card-section">
           <Card
-            src="https://a0.muscache.com/im/pictures/73250991-433e-4950-b7d1-59bba711bb57.jpg?im_w=320"
+            src="https://user-images.githubusercontent.com/70451928/159596344-c6a58234-0493-43b9-9bc9-d1a5f5cef6ed.jpg"
             title="Stowe"
             description="167 miles away"
             className="first-card"
           />
           <Card
-            src="https://a0.muscache.com/im/pictures/e68a0a87-e41a-489e-a03e-e11236d9b679.jpg?im_w=320"
+            src="https://user-images.githubusercontent.com/70451928/159596347-e83475dc-1725-4c4d-976e-1ca796a79441.jpg"
             title="Portland"
             description="99 miles away"
             className="second-card"
           />
           <Card
-            src="https://a0.muscache.com/im/pictures/aef20929-0d6a-40e7-8ac9-321ff0edf8c9.jpg?im_w=320"
+            src="https://user-images.githubusercontent.com/70451928/159596357-966f935c-b9ea-45dd-8d3f-0afc13ebf3a9.jpg"
             title="Lincoln"
             description="120 miles away"
             className="third-card"
           />
 
           <Card
-            src="https://a0.muscache.com/im/pictures/54582c41-77ef-4f41-aa88-6a4ed0068f4b.jpg?im_w=320"
+            src="https://user-images.githubusercontent.com/70451928/159596346-c102ba66-05d0-48b6-8ed0-5be25b3066ed.jpg"
             title="Newport"
             description="61 miles away"
             className="forth-card"
@@ -79,7 +79,7 @@ function Banner() {
 
           <div className="banner-gift-card-right">
             <img
-              src="https://a0.muscache.com/im/pictures/1ca4a497-ba40-4429-be1c-ac6abe4209c6.jpg?im_w=2560"
+              src="https://user-images.githubusercontent.com/70451928/159596356-068963f1-0e07-48f4-ba08-9c8f711f4a1f.jpg"
               alt=""
             />
           </div>
