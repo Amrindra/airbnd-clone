@@ -46,8 +46,8 @@ function Header() {
           </ul>
 
           <div className="header-right">
-            <p>Become a Host</p>
-            <LanguageIcon />
+            <p className="language-and-host">Become a Host</p>
+            <LanguageIcon className="language-and-host" />
 
             <div className="avatar-menu-icons" onClick={handleClick}>
               <MenuIcon className="menu-icon" />

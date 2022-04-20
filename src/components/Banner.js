@@ -1,14 +1,17 @@
 import Card from "./Card";
-// import { Button } from "@mui/material";
-// import React, { useState } from "react";
-// import { useHistory } from "react-router";
 import "../styles/Banner.css";
-// import Search from "./Search";
 import { Link } from "react-router-dom";
 
 function Banner() {
-  // const history = useHistory();
-  // const [showSearch, setShowSearch] = useState(false);
+  const sliderLeft = () => {
+    var slider = document.getElementById("slider");
+    slider.scrollLeft += 500;
+  };
+
+  const sliderRight = () => {
+    var slider = document.getElementById("slider");
+    slider.scrollLeft -= 500;
+  };
 
   return (
     <div className="banner">
@@ -22,8 +25,21 @@ function Banner() {
           </div>
         </div>
 
-        <h3> Inspiration for your next trip</h3>
-        <div className="card-section">
+        <div className="slider-container">
+          <h3> Inspiration for your next trip</h3>
+          <div className="slider-icons">
+            <i
+              className="fa-solid fa-angle-left slider-icon left"
+              onClick={sliderLeft}
+            ></i>
+            <i
+              className="fa-solid fa-angle-right slider-icon right"
+              onClick={sliderRight}
+            ></i>
+          </div>
+        </div>
+
+        <div className="card-section" id="slider">
           <Card
             src="https://user-images.githubusercontent.com/70451928/159596344-c6a58234-0493-43b9-9bc9-d1a5f5cef6ed.jpg"
             title="Stowe"
@@ -93,37 +109,6 @@ function Banner() {
           </div>
         </div>
       </div>
-
-      {/* <div className="banner-homepage-background">
-        <img
-          src="https://a0.muscache.com/im/pictures/6dbfc87a-22a4-4d4a-b352-99aa93a98e78.jpg?im_w=720"
-          alt=""
-        />
-        <h3>Let your curiosity do the booking</h3>
-      </div> */}
-
-      {/* <div className="banner__search">
-        {showSearch && <Search />}
-        <Button
-          onClick={() => setShowSearch(!showSearch)}
-          className="banner__searchButton"
-          variant="outlined"
-        >
-          {showSearch ? "Hide" : "Search Dates"}
-        </Button>
-      </div> */}
-
-      {/* <div className="banner__info">
-        <h1>Get out and stretch your imagination</h1>
-
-        <h5>
-          {" "}
-          Plan a different kind of getaway to uncover the hidden gems near you.
-        </h5>
-        <Button onClick={() => history.push("/search")} variant="outlined">
-          Explore Nearby
-        </Button>
-      </div> */}
     </div>
   );
 }

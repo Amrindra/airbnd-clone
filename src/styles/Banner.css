@@ -206,24 +206,16 @@
   background-color: rgb(223, 223, 223);
 }
 
-/* @media (max-width: 1400px) {
-  .banner-wrapper {
-  }
-} */
-
-/* @media (max-width: 1024px) {
-  .banner-wrapper {
-    margin-bottom: 250px;
-  }
-} */
+.slider-icons {
+  display: none;
+}
 
 @media (max-width: 680px) {
   .banner-homepage-image {
     background: url("https://user-images.githubusercontent.com/70451928/159596352-062f9662-df7c-4f63-acaa-6ccd7137e863.jpg");
     background-size: cover;
-    height: 15%;
-    top: -16.5%;
-    /* right: 1.8rem; */
+    height: 20%;
+    top: -22.5%;
   }
 
   .banner-homepage-image-desc {
@@ -232,7 +224,16 @@
   }
 
   .card-section {
-    display: block;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    transition: all 9s ease-in-out;
+    /* display: flex; */
+    /* display: grid;
+    grid-template-columns: repeat(4,2fr); */
+  }
+
+  .card-section::-webkit-scrollbar {
+    display: none;
   }
 
   .feature-wrapper {
@@ -278,5 +279,29 @@
     background: url("https://user-images.githubusercontent.com/70451928/159596350-75c5269f-a223-4eec-96cb-0abb4c0a53b7.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  .slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slider-container h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .slider-icons {
+    display: flex;
+  }
+
+  .slider-icon.left,
+  .slider-icon.right {
+    padding: 10px;
+    border: solid 1px rgb(201, 201, 201);
+    border-radius: 100%;
+    margin: 35px 2px 0;
+    cursor: pointer;
   }
 }
