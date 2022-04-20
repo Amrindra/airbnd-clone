@@ -210,6 +210,46 @@
   display: none;
 }
 
+@media (max-width: 1025px) {
+  .card-section {
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+
+  .slider-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .slider-container h3 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .slider-icons {
+    display: flex;
+    margin-left: 150px;
+  }
+
+  .slider-icon.left,
+  .slider-icon.right {
+    padding: 20px;
+    border: solid 1px rgb(201, 201, 201);
+    border-radius: 100%;
+    margin: 55px 10px 0;
+    cursor: pointer;
+  }
+
+  .banner-gift-card-right {
+    overflow: hidden;
+  }
+
+  .banner-gift-card-right img {
+    width: 600px;
+    height: 300px;
+  }
+}
+
 @media (max-width: 680px) {
   .banner-homepage-image {
     background: url("https://user-images.githubusercontent.com/70451928/159596352-062f9662-df7c-4f63-acaa-6ccd7137e863.jpg");
@@ -226,10 +266,6 @@
   .card-section {
     overflow-x: scroll;
     scroll-behavior: smooth;
-    transition: all 9s ease-in-out;
-    /* display: flex; */
-    /* display: grid;
-    grid-template-columns: repeat(4,2fr); */
   }
 
   .card-section::-webkit-scrollbar {
@@ -288,12 +324,13 @@
   }
 
   .slider-container h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
   }
 
   .slider-icons {
     display: flex;
+    margin-left: 0;
   }
 
   .slider-icon.left,
