@@ -2,7 +2,7 @@ import "../styles/Login.css";
 
 const Login = ({ handleClick }) => {
   return (
-    <div className="login-wrapper">
+    <div className="login-wrapper" onClick={handleClick}>
       <ul className="login-ul">
         <li className="signup">Sign up</li>
         <li>Log in</li>

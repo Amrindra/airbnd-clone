@@ -36,11 +36,14 @@
   border: none;
   margin-top: 30px;
   cursor: pointer;
-  background: linear-gradient(90deg, #6f019c 0%, #c6017e 135.12%);
+  color: #6f019c;
+  /* background: linear-gradient(90deg, #6f019c 0%, #c6017e 135.12%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 
+/* This butto style is applied to I'm flexible button */
 .banner-homepage-image-desc button:after {
   content: "";
   position: absolute;
@@ -196,14 +199,22 @@
   border-radius: 10px;
   font-size: 1rem;
   font-weight: bold;
-  margin-top: 15rem;
-
+  margin-top: 100px;
   border: none;
   cursor: pointer;
 }
 
 .question-wrapper button:hover {
   background-color: rgb(223, 223, 223);
+}
+
+.card-section {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+.card-section::-webkit-scrollbar {
+  display: none;
 }
 
 .slider-icons {

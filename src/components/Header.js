@@ -54,7 +54,7 @@ function Header() {
               <Avatar className="avatar-icon" />
             </div>
 
-            {showLogin && <Login />}
+            {showLogin && <Login handleClick={handleClick} />}
           </div>
         </div>
 
