@@ -59,8 +59,6 @@ function Header() {
         </div>
 
         <div className="header-search">
-          {/* <input type="text" /> */}
-
           <div className="search-items">
             <h3>Location</h3>
             <p>Where are you going?</p>
