@@ -86,3 +86,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ![feature-left-bigscreen](https://user-images.githubusercontent.com/70451928/159598119-fbec2229-7944-4ccf-9655-de0b7b450504.PNG)
 ![feature-right-bigscreen](https://user-images.githubusercontent.com/70451928/159598127-e6062ce0-bf96-4a62-9a4e-befa87e0dbfd.PNG)
+![screencapture-airbnb-clone-personel-project-vercel-app-2022-06-28-13_32_20](https://user-images.githubusercontent.com/70451928/176248148-bb9838d8-5023-4303-8df5-139805e6813f.png)
+
+
